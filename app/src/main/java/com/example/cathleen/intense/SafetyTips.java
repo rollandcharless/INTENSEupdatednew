@@ -66,4 +66,8 @@ public class SafetyTips extends AppCompatActivity {
         Toast.makeText( this, "next page", Toast.LENGTH_LONG).show();
     }
 
+    public void home(View v){
+        Intent i = new Intent(this, Main3Activity.class);
+        startActivity(i);
+    }
 }
