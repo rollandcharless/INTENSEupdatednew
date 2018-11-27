@@ -58,30 +58,41 @@ public class Main3Activity extends AppCompatActivity {
 
     }
 
-    public void showMessage(View v){
-        Toast.makeText( this, "previous page", Toast.LENGTH_LONG).show();
+    public void Evac(View v){
+        Toast.makeText( this, "Evacuation Centers", Toast.LENGTH_LONG).show();
 
     }
 
-    public void showMess(View v) {
-        Toast.makeText( this, "next page", Toast.LENGTH_LONG).show();
+    public void T(View v) {
+        Toast.makeText( this, "Tips", Toast.LENGTH_LONG).show();
+
     }
 
-    public void home(View v){
-        Intent i = new Intent(this, Main3Activity.class);
-        startActivity(i);
+    public void H(View v) {
+        Toast.makeText( this, "Emergency Hotlines", Toast.LENGTH_LONG).show();
+    }
+
+    public void Home(View v) {
+        Toast.makeText( this, "Returning Home", Toast.LENGTH_LONG).show();
     }
 
     public void process (View v){
         Intent i=null, chooser=null;
         if (v.getId() == R.id.imageView4){
             i = new Intent(this, Main4Activity.class);
+            Evac(v);
             startActivity(i);
         } else if (v.getId() == R.id.imageView6){
             i = new Intent(this, SafetyTips.class);
+            T(v);
             startActivity(i);
         }   else if (v.getId() == R.id.imageView7){
             i = new Intent(this, Hotlines.class);
+            H(v);
+            startActivity(i);
+        }else if (v.getId() == R.id.imageView8){
+            i = new Intent(this, Main3Activity.class);
+            Home(v);
             startActivity(i);
         }
 

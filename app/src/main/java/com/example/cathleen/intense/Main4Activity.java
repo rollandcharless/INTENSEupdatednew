@@ -57,26 +57,13 @@ public class Main4Activity extends AppCompatActivity {
 
     }
 
-    public void showMessage(View v){
-        Toast.makeText( this, "previous page", Toast.LENGTH_LONG).show();
-
-    }
-
-    public void showMess(View v) {
-        Toast.makeText( this, "next page", Toast.LENGTH_LONG).show();
-    }
-
-    public void home(View v){
-        Intent i = new Intent(this, Main3Activity.class);
+    public void northq(View v){
+        Intent i = new Intent(this, NorthQ.class);
         startActivity(i);
     }
-
     public void process (View v){
         Intent i=null, chooser=null;
-        if (v.getId() == R.id.button3){
-            i = new Intent(this, NorthQ.class);
-            startActivity(i);
-        } else if (v.getId() == R.id.button4){
+        if (v.getId() == R.id.button4){
             i = new Intent(this, EastQ.class);
             startActivity(i);
         }   else if (v.getId() == R.id.button5){
@@ -84,6 +71,9 @@ public class Main4Activity extends AppCompatActivity {
             startActivity(i);
         }   else if (v.getId() == R.id.button6){
             i = new Intent(this, WestQ.class);
+            startActivity(i);
+        }else if (v.getId() == R.id.imageView9){
+            i = new Intent(this, Main3Activity.class);
             startActivity(i);
         }
 

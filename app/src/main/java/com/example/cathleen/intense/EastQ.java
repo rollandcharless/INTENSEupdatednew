@@ -70,30 +70,35 @@ public class EastQ extends AppCompatActivity {
     public void process (View v){
         Intent i=null, chooser=null;
         if (v.getId() == R.id.button8){
-            i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("geo:14.5813, 121.0082"));
-            chooser = Intent.createChooser(i, "Select application");
-            startActivity(chooser);
+            Double myLatitude = 14.6646857;
+            Double myLongitude = 121.1157744;
+            String urlAddress = "http://maps.google.com/maps?q=" + myLatitude  + "," + myLongitude + "&fov=90&heading=235&pitch=10&sensor=false";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlAddress));
+            startActivity(intent);
         } else if (v.getId() == R.id.button9){
-            i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("geo:14.5813, 121.0082"));
-            chooser = Intent.createChooser(i, "Select application");
-            startActivity(chooser);
+            Double myLatitude = 14.5785431;
+            Double myLongitude = 121.0643997;
+            String urlAddress = "http://maps.google.com/maps?q=" + myLatitude  + "," + myLongitude + "&fov=90&heading=235&pitch=10&sensor=false";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlAddress));
+            startActivity(intent);
         }else if (v.getId() == R.id.button12){
-            i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("geo:14.5813, 121.0082"));
-            chooser = Intent.createChooser(i, "Select application");
-            startActivity(chooser);
+            Double myLatitude = 14.6330277;
+            Double myLongitude =121.0967926;
+            String urlAddress = "http://maps.google.com/maps?q=" + myLatitude  + "," + myLongitude + "&fov=90&heading=235&pitch=10&sensor=false";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlAddress));
+            startActivity(intent);
         }else if (v.getId() == R.id.button13){
-            i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("geo:14.5813, 121.0082"));
-            chooser = Intent.createChooser(i, "Select application");
-            startActivity(chooser);
+            Double myLatitude = 14.6297639;
+            Double myLongitude = 121.0942744;
+            String urlAddress = "http://maps.google.com/maps?q=" + myLatitude  + "," + myLongitude + "&fov=90&heading=235&pitch=10&sensor=false";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlAddress));
+            startActivity(intent);
         }else if (v.getId() == R.id.button14){
-            i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("geo:14.5813, 121.0082"));
-            chooser = Intent.createChooser(i, "Select application");
-            startActivity(chooser);
+            Double myLatitude = 14.6204335;
+            Double myLongitude = 121.0852753;
+            String urlAddress = "http://maps.google.com/maps?q=" + myLatitude  + "," + myLongitude + "&fov=90&heading=235&pitch=10&sensor=false";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlAddress));
+            startActivity(intent);
         }
     }
 }

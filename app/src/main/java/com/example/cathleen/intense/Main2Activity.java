@@ -59,12 +59,12 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     public void showMessage(View v){
-        Toast.makeText( this, "previous page", Toast.LENGTH_LONG).show();
+        Toast.makeText( this, "Previous Page", Toast.LENGTH_LONG).show();
 
     }
 
     public void showMess(View v) {
-        Toast.makeText( this, "next page", Toast.LENGTH_LONG).show();
+        Toast.makeText( this, "Next Page", Toast.LENGTH_LONG).show();
     }
 
 
@@ -79,7 +79,7 @@ public class Main2Activity extends AppCompatActivity {
 
     public void next(View v){
         Intent i = new Intent(this, Main3Activity.class);
-
+        showMess(v);
         startActivity(i);
     }
 }
